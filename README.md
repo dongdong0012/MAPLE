@@ -12,33 +12,7 @@
 <a href="https://github.com/YuchuanTian/AIGC_text_detector/blob/main/imgs/QR.jpg"><img src="https://img.shields.io/badge/微信-二维码加群-green?logo=wechat&amp"></a>
 </p>  
 
-This is the official repo of our **ICLR'24 Spotlight** paper "Multiscale Positive-Unlabeled Detection of AI-Generated Texts".
 
-## News
-
-**7/24/2025**: The latest v3 models and demos are released on ModelScope! [DEMO](https://modelscope.cn/studios/YuchuanTian/AIGC_text_detector/)
-
-**6/25/2025 🔥🔥 [MAJOR UPDATE](#update-anchor)**: We release advanced (v3) detectors targeting latest LLMs, including DeepSeek-V3, GPT-4, and reasoning models. [En-v3](https://huggingface.co/yuchuantian/AIGC_detector_env3) / [En-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_env3short) /  [Zh-v3](https://huggingface.co/yuchuantian/AIGC_detector_zhv3) /  [Zh-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_zhv3short) / [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
-
-**6/1/2025**: We release a beta version targeting latest LLMs, including DeepSeek-V3 and GPT-4. [En-beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta)  [Zh-beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta)
-
-**3/25/2025**: We release a demo (with both English and Chinese) on HuggingFace.
-
-**3/6/2025**: We will update a brand-new detector version to align with the latest LLMs. Please keep tuned!
-
-
-*BibTex* formatted citation:
-
-```
-@misc{tian2023multiscale,
-      title={Multiscale Positive-Unlabeled Detection of AI-Generated Texts}, 
-      author={Yuchuan Tian and Hanting Chen and Xutao Wang and Zheyuan Bai and Qinghua Zhang and Ruifeng Li and Chao Xu and Yunhe Wang},
-      year={2023},
-      eprint={2305.18149},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
 
 ## Detector Models
 
@@ -169,3 +143,4 @@ Our code refers to the following GitHub repo:
 https://github.com/openai/gpt-2-output-dataset
 
 We sincerely thank their authors for open-sourcing.
+
