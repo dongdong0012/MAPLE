@@ -12,46 +12,6 @@
 <a href="https://github.com/YuchuanTian/AIGC_text_detector/blob/main/imgs/QR.jpg"><img src="https://img.shields.io/badge/微信-二维码加群-green?logo=wechat&amp"></a>
 </p>  
 
-
-
-## Detector Models
-
-We have open-sourced detector models in the paper as follows.
-
-Links for Detectors: [Google Drive](https://drive.google.com/drive/folders/1Q_78qoaAuO8HOtt-SawimiXhli6y0Uii?usp=drive_link)  [Baidu Disk (PIN:1234)](https://pan.baidu.com/s/11hOpOxImAh1ZfDy9F5jC1Q)
-
-We have also uploaded detector models to HuggingFace, where easy-to-use **DEMOs** and online **APIs** are provided.
-
-| Variants                                                     | HC3-Full-En        | HC3-Sent-En        |
-| ------------------------------------------------------------ | ------------------ | ------------------ |
-| seed0                                                        | 98.68              | 82.84              |
-| seed1 [HuggingFace: en v1](https://huggingface.co/yuchuantian/AIGC_detector_env1) | 98.56              | 87.06              |
-| seed2                                                        | 97.97              | 86.02              |
-| **Avg.**                                                     | **98.40$\pm$0.31** | **85.31$\pm$1.80** |
-
-## Stronger Detectors
-
-We have also open-sourced detector models with strengthened training strategies. Specifically, we develop a strong Chinese detector ```AIGC_detector_zhv2```, which demonstrates similar performance to SOTA closed-source Chinese detectors on various texts, including news articles, poetry, essays, etc. The **DEMOs** and **APIs** are available on HuggingFace.
-
-| Detector                  | Google Drive                                                 | Baidu Disk                                                   | HuggingFace Link                                             |
-| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| English, version 2 (env2) | [Google Drive](https://drive.google.com/drive/folders/11ROLjxopgx44YT9RS8RmchdxR6Yi-CJk?usp=drive_link) | [Baidu Disk (PIN:1234)](https://pan.baidu.com/s/11CQaWzsT7a-IgceOBpmb7g) | [en v2](https://huggingface.co/yuchuantian/AIGC_detector_env2) |
-| Chinese, version 2 (zhv2) | [Google Drive](https://drive.google.com/drive/folders/1-a7n-T9Z1_EIWbvip2eC0ssx5rih8pQI?usp=drive_link) | [Baidu Disk (PIN:1234)](https://pan.baidu.com/s/1VPGYtswC1GJXESWzne4RPA) | [zh v2](https://huggingface.co/yuchuantian/AIGC_detector_zhv2) |
-
-## About the Dataset
-
-Here we provide the official link for the HC3 dataset: [Dataset Link](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection/blob/main/HC3/README.md). We also provide identical dataset copies on [Google Drive](https://drive.google.com/drive/folders/10GsKfCWe_BHLdGnfhSV-_k0-PH31_oWn?usp=drive_link) and [Baidu Disk (PIN:1234)](https://pan.baidu.com/s/1OUJbPYbC2ZUAt50MFDdHrQ) for your ease of use. We acknowledge the marvelous work by HC3 authors.
-
-#### Data Preprocessing
-
-In Appendix B of [our paper](https://arxiv.org/pdf/2305.18149.pdf), we proposed the removal of redundant spaces in human texts of the HC3-English dataset. We have provided a helper function ```en_cleaning``` in ```corpus_cleaning_kit.py``` that takes a sentence string as input and returns a preprocessed sentence without redundant spaces.
-
-Here we provide a cleaned version of HC3-English. In this version, all answers are cleaned (*i. e.* redundant spaces are removed). However, please use the original version of HC3 for all experiments in our paper, as we have embedded the cleaning procedures in the training & validation scripts.
-
-**CLEANED** HC3-English Link:     [Google Drive](https://drive.google.com/drive/folders/11m9w7blNjUR2VE5N5AU7aOmj9YZhOyLy?usp=drive_link)    [Baidu Disk (PIN:1234)](https://pan.baidu.com/s/1kKSiyj1Nv2me6mODZd0Y4A)
-
-##  Preparation
-
 - Install requirement packages:
 
 ```shell
@@ -120,22 +80,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py --batch-size 32 --max-sequence-length 512
 ```
 
 
-
-## Updates
-
-<a name="update-anchor"></a>
-
-A major update (v3) is ongoing, with updated English and Chinese detectors, datasets, and codes. This time, our detector targets at corpora from MiniMax-Text-01, Llama-3.3-70B-Instruct, Qwen2.5-72B-Instruct, DeepSeek-V3, and GPT-4-Turbo. Besides, Chain-of-Thought (CoT) models are covered, including DeepSeek-R1, GPT-o3, and QwQ-32B. Please keep tuned for future updates!
-
-
-| Version                          | English                                                      | Chinese                                                      | Comments                                                     |
-| -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 6/25/2025 AIGC-Detector-V3       | [En_v3](https://huggingface.co/yuchuantian/AIGC_detector_env3) | [Zh_v3](https://huggingface.co/yuchuantian/AIGC_detector_zhv3) | Version 3. Strongest performance on normal AI texts. CoT LLMs are covered. |
-| 6/25/2025 AIGC-Detector-V3-Short | [En_v3_short](https://huggingface.co/yuchuantian/AIGC_detector_env3short) | [Zh_v3_short](https://huggingface.co/yuchuantian/AIGC_detector_zhv3short) | Version 3 targeting shorter texts without sacrificing longer ones. CoT LLMs are covered. |
-| 5/31/2025 AIGC-Detector-Beta     | [En_beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta) | [Zh_beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta) | A beta version. Stronger versions will be released in the next update. |
-
-
-
 ## Acknowledgement
 
 Our code refers to the following GitHub repo:
@@ -143,4 +87,5 @@ Our code refers to the following GitHub repo:
 https://github.com/openai/gpt-2-output-dataset
 
 We sincerely thank their authors for open-sourcing.
+
 
