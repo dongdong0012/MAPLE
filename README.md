@@ -1,17 +1,3 @@
-# Multiscale Positive-Unlabeled Detection of AI-Generated Texts
-
-<p align="left">
-<a href="https://arxiv.org/abs/2305.18149" alt="arXiv">
-    <img src="https://img.shields.io/badge/arXiv-2305.18149-b31b1b.svg?style=flat" /></a>
-<a href="https://arxiv.org/pdf/2305.18149" alt="arXiv">
-    <img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg?style=flat" /></a>
-<a href="https://huggingface.co/spaces/yuchuantian/AIGC_text_detector" alt="Hugging Face Models">
-    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue" /></a>
-<a href="https://modelscope.cn/studios/YuchuanTian/AIGC_text_detector" alt="ModelScope Studio">
-    <img src="https://img.shields.io/badge/ModelScope-Studio-blue" /></a>
-<a href="https://github.com/YuchuanTian/AIGC_text_detector/blob/main/imgs/QR.jpg"><img src="https://img.shields.io/badge/微信-二维码加群-green?logo=wechat&amp"></a>
-</p>  
-
 - Install requirement packages:
 
 ```shell
@@ -87,5 +73,6 @@ Our code refers to the following GitHub repo:
 https://github.com/openai/gpt-2-output-dataset
 
 We sincerely thank their authors for open-sourcing.
+
 
 
