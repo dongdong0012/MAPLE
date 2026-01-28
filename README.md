@@ -78,13 +78,13 @@ This design improves robustness against short-text uncertainty and enhances cros
 Citation
 
 If you use this code in your research, please cite the corresponding paper:
-
 @article{Hu2025MAPLE,
   title={MAPLE: Multidimensional Adaptive-Prior PU Learning for Detecting AI-Generated Text},
   author={Hu, Jiaen and others},
   journal={Computing},
   year={2025}
 }
+
 
 
 
