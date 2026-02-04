@@ -32,4 +32,4 @@ if os.path.abspath(model_dir) != os.path.abspath(target_dir):
         else:
             shutil.copy2(src, dst)
 
-print('模型已下载到:', target_dir)
+print('The model has been downloaded to:', target_dir)
